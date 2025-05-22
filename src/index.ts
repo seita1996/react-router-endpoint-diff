@@ -1,9 +1,9 @@
-import { GitDiffExecutor } from "./core/GitDiffExecutor";
 import { DiffParser } from "./core/DiffParser";
-import { FileFilter } from "./core/FileFilter";
 import { EndpointAnalyzer } from "./core/EndpointAnalyzer";
+import { FileFilter } from "./core/FileFilter";
+import { GitDiffExecutor } from "./core/GitDiffExecutor";
 import { MarkdownReporter } from "./core/MarkdownReporter";
-import { CLIOptions, EndpointChange } from "./types";
+import type { CLIOptions, EndpointChange } from "./types";
 import { logVerbose } from "./utils/helpers";
 
 export class ReactRouterEndpointDiff {

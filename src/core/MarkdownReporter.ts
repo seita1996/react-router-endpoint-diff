@@ -1,4 +1,4 @@
-import { EndpointChange } from "../types";
+import type { EndpointChange } from "../types";
 import { escapeMarkdown, formatGitRef } from "../utils/helpers";
 
 export class MarkdownReporter {

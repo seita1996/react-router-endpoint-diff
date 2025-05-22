@@ -2,7 +2,7 @@
 
 import { Command } from "commander";
 import { ReactRouterEndpointDiff } from "./index";
-import { CLIOptions } from "./types";
+import type { CLIOptions } from "./types";
 
 const program = new Command();
 

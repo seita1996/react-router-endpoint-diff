@@ -1,5 +1,5 @@
 import parseDiff from "parse-diff";
-import { DiffFile, DiffHunk, ParsedDiff } from "../types";
+import type { DiffFile, ParsedDiff } from "../types";
 
 export class DiffParser {
 	parse(diffText: string): ParsedDiff {
@@ -78,7 +78,7 @@ export class DiffParser {
 				if (line.startsWith("@@")) {
 					const match = line.match(/@@ -(\d+),?\d* \+(\d+),?\d* @@/);
 					if (match) {
-						currentLine = parseInt(match[2]);
+						currentLine = Number.parseInt(match[2]);
 						inRelevantHunk = currentLine >= startLine && currentLine <= endLine;
 					}
 				}

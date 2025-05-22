@@ -1,5 +1,5 @@
-import { simpleGit, SimpleGit } from "simple-git";
-import { GitDiffOptions } from "../types";
+import { type SimpleGit, simpleGit } from "simple-git";
+import type { GitDiffOptions } from "../types";
 
 export class GitDiffExecutor {
 	private git: SimpleGit;

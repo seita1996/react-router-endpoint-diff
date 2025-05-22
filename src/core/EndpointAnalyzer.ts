@@ -1,11 +1,11 @@
-import { DiffFile, DiffHunk, EndpointChange } from "../types";
+import type { DiffFile, DiffHunk, EndpointChange } from "../types";
 import {
 	containsRequestParamPattern,
 	filePathToUrlPath,
 	isAddedLine,
 	logVerbose,
 } from "../utils/helpers";
-import { ASTParser, LoaderActionInfo } from "./ASTParser";
+import { ASTParser, type LoaderActionInfo } from "./ASTParser";
 import { DiffParser } from "./DiffParser";
 
 export class EndpointAnalyzer {
