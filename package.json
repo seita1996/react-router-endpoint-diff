@@ -1,6 +1,6 @@
 {
   "name": "react-router-endpoint-diff",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI tool to detect API endpoint changes in React Router applications",
   "main": "dist/index.js",
   "bin": {
@@ -22,12 +22,15 @@
   },
   "keywords": [
     "react-router",
-    "api",
     "endpoint",
     "diff",
     "cli",
     "git"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seita1996/react-router-endpoint-diff"
+  },
   "author": "seitaro",
   "license": "MIT",
   "dependencies": {

@@ -11,7 +11,7 @@ program
 	.description(
 		"CLI tool to detect API endpoint changes in React Router applications",
 	)
-	.version("1.0.0");
+	.version("0.1.1");
 
 program
 	.option(
