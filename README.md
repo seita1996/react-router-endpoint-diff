@@ -1,5 +1,9 @@
 # React Router Endpoint Diff — Compare loaders and actions across commits
 
+[![Test](https://github.com/seita1996/react-router-endpoint-diff/actions/workflows/test.yml/badge.svg)](https://github.com/seita1996/react-router-endpoint-diff/actions/workflows/test.yml)
+[![CodeQL](https://github.com/seita1996/react-router-endpoint-diff/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/seita1996/react-router-endpoint-diff/actions/workflows/github-code-scanning/codeql)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/seita1996/react-router-endpoint-diff)
+
 A CLI tool to detect API endpoint changes in React Router applications by analyzing Git diffs and identifying changes to `loader` and `action` functions.
 
 ## Features
