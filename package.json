@@ -14,7 +14,7 @@
     "prepare": "pnpm run build",
     "lint": "biome lint ./src",
     "format": "biome format --write ./src",
-    "check": "biome check --apply ./src",
+    "check": "biome lint ./src && biome format --write ./src",
     "debug": "ts-node src/cli.ts",
     "debug:verbose": "ts-node src/cli.ts --verbose --summary-only",
     "debug:help": "ts-node src/cli.ts --help",
@@ -40,7 +40,7 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.5",
     "@types/jest": "^30.0.0",
     "jest": "^30.0.2",
     "ts-jest": "^29.1.1",
