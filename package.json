@@ -14,7 +14,7 @@
     "prepare": "pnpm run build",
     "lint": "biome lint ./src",
     "format": "biome format --write ./src",
-    "check": "biome check --apply ./src",
+    "check": "biome lint ./src && biome format --write ./src",
     "debug": "ts-node src/cli.ts",
     "debug:verbose": "ts-node src/cli.ts --verbose --summary-only",
     "debug:help": "ts-node src/cli.ts --help",
