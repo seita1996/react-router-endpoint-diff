@@ -56,7 +56,6 @@ export class ASTParser {
 		const visit = (node: ts.Node) => {
 			// Check for exported variable declarations: export const loader = ...
 			if (ts.isVariableStatement(node) && this.hasExportModifier(node)) {
-				// biome-ignore lint/complexity/noForEach: <explanation>
 				node.declarationList.declarations.forEach((declaration) => {
 					if (ts.isIdentifier(declaration.name)) {
 						const name = declaration.name.text;
@@ -99,7 +98,6 @@ export class ASTParser {
 				node.exportClause &&
 				ts.isNamedExports(node.exportClause)
 			) {
-				// biome-ignore lint/complexity/noForEach: <explanation>
 				node.exportClause.elements.forEach((element) => {
 					const name = element.name.text;
 					if (name === "loader" || name === "action") {

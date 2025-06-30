@@ -49,7 +49,7 @@ export class GitDiffExecutor {
 	private async resolveRef(ref: string): Promise<void> {
 		try {
 			await this.git.revparse([ref]);
-		} catch (error) {
+		} catch (_error) {
 			throw new Error(`Invalid git reference: ${ref}`);
 		}
 	}
@@ -58,7 +58,7 @@ export class GitDiffExecutor {
 		try {
 			const branch = await this.git.branch();
 			return branch.current || "HEAD";
-		} catch (error) {
+		} catch (_error) {
 			return "HEAD";
 		}
 	}
