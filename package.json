@@ -37,7 +37,7 @@
     "commander": "^14.0.0",
     "parse-diff": "^0.11.1",
     "simple-git": "^3.20.0",
-    "typescript": "^5.2.2"
+    "typescript": "^6.0.3"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.12",
